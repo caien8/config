@@ -6,6 +6,22 @@
 super + Return
 	kitty
 
+# Shortcuts
+super + w 
+  brave
+
+super + f
+  thunar  
+
+super + s
+  spotify
+
+super + v
+   code
+
+super + F1
+  ~/.config/bspwm/scripts/keybindings_rofi.sh
+
 # close and kill
 super + c
 	bspc node -{c,k}
@@ -16,7 +32,7 @@ super + r
                 -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
                 -show-icons -drun-icon-theme "Qogir-dark" -font "Droid Sans Regular 10"
 super + d
-    dmenu_run -l 9
+    dmenu_run -l 9 -nf "#87e2f6" -sb "#87e2f6" -sf "#000000"
 # show open window
 super + ctrl + d
 	rofi -modi drun -show window -line-padding 4 \
@@ -36,15 +52,6 @@ Print
 super + Print
   ~/.config/bspwm/scripts/screenshot.sh
 
-# Shortcuts
-super + w 
-  firefox
-
-super + f
-  thunar  
-
-super + F1
-  ~/.config/bspwm/scripts/keybindings_rofi.sh
 
 # power-menu 
 super + shift + e
@@ -176,9 +183,9 @@ XF86AudioMute
 
 # Brightness up
 XF86MonBrightnessUp
-  xbacklight -inc 5
+  brightnessctl set +5%
 
 # And brightness down
 XF86MonBrightnessDown
-  xbacklight -dec 5
+  brightnessctl set 5%-
 

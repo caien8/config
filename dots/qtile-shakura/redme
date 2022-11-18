@@ -5,7 +5,7 @@ xrandr --output monitor_name --mode 1920×1080
 
 
 
-sudo pacman -Sy code librewolf rust spotify-adblock gimp kitty htop brightnessctl flameshot virtualbox betterlockscreen networkmanager networkmanager-dmenu-git python-gobject network-manager-applet brave dmenu gotop xarchiver nitrogen
+sudo pacman -Sy code rust spotify-adblock gimp kitty htop brightnessctl flameshot virtualbox betterlockscreen networkmanager networkmanager-dmenu-git python-gobject network-manager-applet brave dmenu gotop xarchiver nitrogen cava
 
 
 sudo pacman -S libevdev python-libevdev i2c-tools git
